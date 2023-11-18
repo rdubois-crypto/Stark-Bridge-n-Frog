@@ -21,7 +21,7 @@ pragma solidity >=0.8.19 <0.9.0;
 
 
 import{gx,gy,n,p} from "@solidity/include/FCL_field.h.sol";
-import {random_ctx , SCL_RandomUint256_Generate } from "@solidity/include/FCL_DRNG.h.sol";
+import {random_ctx , FCL_RandomUint256_Generate } from "@solidity/include/FCL_DRNG.h.sol";
 import{ec_scalarmulN, ec_AddN} from "@solidity/include/FCL_elliptic.h.sol";
 
 
@@ -65,7 +65,7 @@ function Musig2_Sign_Round1(random_ctx memory RandCtx) view
 returns (uint256[_MU] memory nonces, uint256[_MU] memory ephemerals)
 {
    for(uint256 j=0;j<_MU;j++){
-    ( RandCtx, nonces[j])=SCL_RandomUint256_Generate(RandCtx);
+    ( RandCtx, nonces[j])=FCL_RandomUint256_Generate(RandCtx);
       (ephemerals[j],)=ec_scalarmulN(nonces[j], gx, gy);
    }
    //TODO: check where is x only, replace by base point mul

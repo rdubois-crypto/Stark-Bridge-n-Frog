@@ -14,7 +14,7 @@ pragma solidity >=0.8.19 <0.9.0;
 
 //Status:WIP
 
-import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "@solidity/include/SCL_field.h.sol"; 
+import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "@solidity/include/FCL_field.h.sol"; 
 
 /* An adaptator signature scheme as described in 
 https://medium.com/crypto-garage/adaptor-signature-on-schnorr-cross-chain-atomic-swaps-3f41c8fb221b*/

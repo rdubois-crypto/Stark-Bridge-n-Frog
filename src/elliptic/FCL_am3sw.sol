@@ -19,11 +19,11 @@
 
 
 pragma solidity >=0.8.19 <0.9.0;
- 
+ 	
 
-import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "@solidity/include/FCL_field.h.sol"; 
-import{ec_AddN, ecAff_IsZero, ec_Normalize} from "@solidity/elliptic/FCL_gensw.sol";
-import { pModInv } from "@solidity/modular/FCL_modular.sol"; 
+import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "src/include/FCL_field.h.sol"; 
+import{ec_AddN, ecAff_IsZero, ec_Normalize} from "src/elliptic/FCL_gensw.sol";
+import { pModInv } from "src/modular/FCL_modular.sol"; 
 
  /* @dev Sutherland2008 doubling
  /* The "dbl-2008-s-1" doubling formulas */

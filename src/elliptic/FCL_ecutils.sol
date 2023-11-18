@@ -21,9 +21,15 @@
 pragma solidity >=0.8.19 <0.9.0;
 
 
-import { p, a,b ,gx, gy, n, pMINUS_2, nMINUS_2, MINUS_1 } from "@solidity/include/FCL_field.h.sol";
-import {_HIBIT_CURVE} from "@solidity/include/FCL_field.h.sol";
-import {ec_Add, ec_Aff_Add, ec_AddN, ec_Dbl, ec_Normalize, ecAff_IsZero} from "@solidity/include/FCL_elliptic.h.sol";
+import { p, a,b ,gx, gy, n, pMINUS_2, nMINUS_2, MINUS_1 } from "src/include/FCL_field.h.sol";
+import {_HIBIT_CURVE} from "src/include/FCL_field.h.sol";
+
+
+import { p, gx, gy, n, pMINUS_2, nMINUS_2, MINUS_1 } from "@solidity/include/FCL_field.h.sol";
+//import { ec_Aff_Add} from "@solidity/elliptic/SCL_am3sw.sol"; //minimal version for libsecp256r1 without prec
+import { ec_Dbl} from "@solidity/elliptic/FCL_am3sw.sol";
+import { ec_AddN,  ec_Add, ec_Normalize, ecAff_IsZero} from "@solidity/elliptic/FCL_gensw.sol";
+import{ec_scalarmulN, ec_Aff_Add, ec_TestEq, ec_SetPrec8 as ec_SetPrec, ecAff_isOnCurve,  ec_scalarPow2mul} from "@solidity/elliptic/FCL_ecutils.sol";
 
 
 
