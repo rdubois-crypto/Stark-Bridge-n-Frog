@@ -27,6 +27,8 @@ Only after verifying the validity of the Frog, we minted it resoecting ERC721 st
 
 https://testnets.opensea.io/assets/sepolia/0x9dea353bbca84a12d6b49f16c415e616a2e08fa1/111674470498115766391113688046808700390558580121109134455450395313003599686822
 
+![image](https://github.com/rdubois-crypto/Stark-Bridge-n-Frog/assets/103030189/b9249102-2ed2-4def-a376-4c5a5c4c151d)
+
 ## 
 
 
