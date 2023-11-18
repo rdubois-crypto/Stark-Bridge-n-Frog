@@ -14,6 +14,11 @@ Scheme signatures enables MPC, but also atomic swap, enabling private exchange o
 Atomic Swaps are very well described here:
 https://medium.com/crypto-garage/adaptor-signature-on-schnorr-cross-chain-atomic-swaps-3f41c8fb221b
 
+We deployed using create2, so the address is the same on all networks:
+https://sepolia.etherscan.io/address/0xd308678e13f435f55292a76ad7abd45a844aa4f4#code
+https://explorer.goerli.linea.build/address/0xd308678E13f435f55292A76AD7aBD45A844aa4F4/contracts#address-tabs
+https://goerli.basescan.org/address/0xd308678e13f435f55292a76ad7abd45a844aa4f4#code
+
 We did this by using our FCL implementation as described in https://eprint.iacr.org/2023/939, then optimized it further for the specific shape
 of starkcurve. We had the fastest EIP7212 implementation, now we brought the fastest starkcurve implementation.
 
@@ -29,7 +34,9 @@ https://testnets.opensea.io/assets/sepolia/0x9dea353bbca84a12d6b49f16c415e616a2e
 
 ![image](https://github.com/rdubois-crypto/Stark-Bridge-n-Frog/assets/103030189/b9249102-2ed2-4def-a376-4c5a5c4c151d)
 
-## 
+## What's next, what is the retex ?
+
+Damn those frogs are so fun, i couldn't resist to chase two rabbits. I want the whole game working, for the moment you have a starkcurve. But I can't wait to see them battlle.
 
 
 
