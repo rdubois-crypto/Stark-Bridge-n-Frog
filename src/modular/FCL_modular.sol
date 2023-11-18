@@ -18,8 +18,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.19 <0.9.0;
 
-import{ MODEXP_PRECOMPILE} from "@solidity/include/SCL_mask.h.sol";
-import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "@solidity/include/SCL_field.h.sol";
+import{ MODEXP_PRECOMPILE} from "@solidity/include/FCL_mask.h.sol";
+import { p, gx, gy, n, pMINUS_2, nMINUS_2 } from "@solidity/include/FCL_field.h.sol";
 
 
 

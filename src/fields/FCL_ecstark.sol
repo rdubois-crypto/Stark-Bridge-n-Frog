@@ -19,7 +19,7 @@
 pragma solidity >=0.8.19 <0.9.0;
 
 
-import {_STARKCURVE} from "@solidity/include/SCL_mask.h.sol";
+import {_STARKCURVE} from "@solidity/include/FCL_mask.h.sol";
 
 uint256 constant FIELD_OID=_STARKCURVE;
 
