@@ -26,6 +26,8 @@ We deployed using create2, so the address is the same on all networks:
 * optimism-testnet (todo: find link)
 * https://mumbai.polygonscan.com/address/0x84655393c2d6492a5eb41bb0d2c2ee3f29360c17#code
 * scroll testnet ?
+### No Create2 chain
+[0xbBc76f5b09462e397FBA811E1aAa738874bCD839](https://stylus-testnet-explorer.arbitrum.io/address/0xbBc76f5b09462e397FBA811E1aAa738874bCD839/contracts#address-tabs)
 
 We did this by using our FCL implementation as described in https://eprint.iacr.org/2023/939, then optimized it further for the specific shape
 of starkcurve. We had the fastest EIP7212 implementation, now we brought the fastest starkcurve implementation.
