@@ -1,6 +1,7 @@
 # Stark-Bridge-n-Frog
 Multichain Swap using Starkcurve over any EVM Layer and Starknet
 
+Hackaton Istanbul EthGlobal 11/23.
 
 
 ## Compiling and testing
