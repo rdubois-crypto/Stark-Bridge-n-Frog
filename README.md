@@ -8,6 +8,9 @@ Hackaton Istanbul EthGlobal 11/23.
 
 This is a forge repo. Just type forge test at root folder.
 
+The test of the stark curve has been made using the sagemath code of FCL. The one that allow us to break the DNA challenge of CTF Eth Lisbonn. 
+
+
 ## Frogchitecture
 
 ![image](https://github.com/rdubois-crypto/Stark-Bridge-n-Frog/assets/103030189/0fa55d18-6358-41e0-a1e9-f2b8cc650ffd)
