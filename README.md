@@ -2,6 +2,11 @@
 Multichain Swap using Starkcurve over any EVM Layer and Starknet
 
 
+
+## Compiling and testing
+
+This is a forge repo. Just type forge test at root folder.
+
 ## Frogchitecture
 
 ![image](https://github.com/rdubois-crypto/Stark-Bridge-n-Frog/assets/103030189/0fa55d18-6358-41e0-a1e9-f2b8cc650ffd)
