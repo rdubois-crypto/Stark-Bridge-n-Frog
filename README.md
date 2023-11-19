@@ -25,7 +25,7 @@ We deployed using create2, so the address is the same on all networks:
 * https://explorer.celo.org/alfajores/address/0x84655393c2D6492a5eb41Bb0d2c2ee3f29360c17/contracts#address-tabs
 * optimism-testnet (todo: find link)
 * https://mumbai.polygonscan.com/address/0x84655393c2d6492a5eb41bb0d2c2ee3f29360c17#code
-* scroll testnet ?
+* https://sepolia-blockscout.scroll.io/address/0x84655393c2D6492a5eb41Bb0d2c2ee3f29360c17
 ### No Create2 chain
 [0xbBc76f5b09462e397FBA811E1aAa738874bCD839](https://stylus-testnet-explorer.arbitrum.io/address/0xbBc76f5b09462e397FBA811E1aAa738874bCD839/contracts#address-tabs)
 
