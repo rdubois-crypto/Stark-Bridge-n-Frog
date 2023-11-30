@@ -12,6 +12,10 @@ The test of the stark curve has been made using the sagemath code of FCL. The on
 with a baby step giant step over starkcurve.
 
 
+
+
+
+
 ## Frogchitecture
 
 ![image](https://github.com/rdubois-crypto/Stark-Bridge-n-Frog/assets/103030189/0fa55d18-6358-41e0-a1e9-f2b8cc650ffd)
@@ -57,6 +61,37 @@ https://testnets.opensea.io/assets/sepolia/0x9dea353bbca84a12d6b49f16c415e616a2e
 ## What's next, what is the retex ?
 
 Damn those frogs are so fun, i couldn't resist to chase two rabbits. I want the whole game working, for the moment you have a starkcurve. But I can't wait to see them battlle.
+
+## Starkcurve commands
+
+The following commands provide an example of a successfull signing/verifying sequence. One can easily tweak the inputs for additional tests.
+
+(Same sequence as in libFCL.stark.t.sol).
+
+SCROLL_RPC=https://scroll-sepolia.blockpi.network/v1/rpc/public
+
+FCLSTARK_ADDRESS=0x84655393c2D6492a5eb41Bb0d2c2ee3f29360c17 #This FCLStark available on Scroll(sepolia), mantle, celo, OP, polygon testnets
+
+RPC=$MUMBAI_RPC
+
+RPC=$SCROLL_RPC
+
+MESSAGE=0x1e6dfaf38752b25a1eb0c2c57b12b9099edcba342f79159679e20f5c3c28d379
+
+KPRIV=0x800000000000010ffffffffffffffffb781126dcae7b2321e66a241adc64d23 
+ 
+KPUBx=0x66276b22edf076517b8fa9287280242555afda9ed00e78eedc9f99be8542aa3
+
+KPUBy=0x2782b3e9bd943e5db3bece635cde338cdaca652c3643b9a1cf146f875a3ffd7
+
+SIG_S=0x1f0f9fabe88886318f61016eb335fe0a2fd7d34f4a287d130eecae7e54a4c91
+
+SIG_E=0x24ad5d150c53c817cc16786ed19ed9582bd77470f07fd94d45066d6308b1bdb
+
+cast call --trace --verbose --legacy --rpc-url $RPC $FCLSTARK_ADDRESS "SchnorrSign(bytes32,uint256)" $MESSAGE $KPRIV
+
+cast call --trace --verbose --legacy --rpc-url $RPC 0x84655393c2D6492a5eb41Bb0d2c2ee3f29360c17 "SchnorrVerify(bytes32, uint256, uint256, uint256, uint256)" $MESSAGE $SIG_S $SIG_E $KPUBx $KPUBy
+
 
 
 
