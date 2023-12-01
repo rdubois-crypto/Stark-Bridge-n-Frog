@@ -72,8 +72,6 @@ SCROLL_RPC=https://scroll-sepolia.blockpi.network/v1/rpc/public
 
 FCLSTARK_ADDRESS=0x84655393c2D6492a5eb41Bb0d2c2ee3f29360c17 #This FCLStark available on Scroll(sepolia), mantle, celo, OP, polygon testnets
 
-RPC=$MUMBAI_RPC
-
 RPC=$SCROLL_RPC
 
 MESSAGE=0x1e6dfaf38752b25a1eb0c2c57b12b9099edcba342f79159679e20f5c3c28d379
